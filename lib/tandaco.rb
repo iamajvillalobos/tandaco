@@ -12,7 +12,7 @@ module Tandaco
   include APIClientBase::Base.module
 
   with_configuration do
-    has :host, classes: String
+    has :host, classes: String, default: 'https://my.tanda.co'
     has :token, classes: String
   end
 end
