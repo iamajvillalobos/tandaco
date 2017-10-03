@@ -6,7 +6,7 @@ module Tandaco
     private
 
     def default_body
-      raw_response.body
+      JSON.parse(raw_response.body)
     end
   end
 end
