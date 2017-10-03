@@ -28,6 +28,14 @@ client = Tandaco.new(token: token)
 client.get_all_users
 ```
 
+## Contributing
+1. Read [api_client_base-ruby](https://github.com/imacchiato/api_client_base-ruby) as I'm using it for gem 
+framework.
+2. Fork this repository.
+3. Implement your feature or bug fix.
+4. Add, commit, and push your changes.
+5. Submit a pull request.
+
 ## Thanks
 
 **tandaco** © 2017+, Arman Jon Villalobos. Released under the [MIT] License.<br>
