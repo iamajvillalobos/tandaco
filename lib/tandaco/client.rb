@@ -4,6 +4,8 @@ module Tandaco
     attribute :host, String, default: 'https://my.tanda.co/api'
     attribute :token, String
 
+    api_action :get_all_users
+
     private
 
     def default_opts
