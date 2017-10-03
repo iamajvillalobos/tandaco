@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/tandaco.svg)](https://badge.fury.io/rb/tandaco)
 ## Tandaco
 Ruby gem that wraps the [Tanda](https://tanda.co) API.
 
