@@ -1,7 +1,8 @@
 require 'bundler/setup'
+require 'factory_girl'
+require 'pathname'
 require 'rspec'
 require 'tandaco'
-require 'pathname'
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))
 Dir[SPEC_DIR.join('support', '*.rb')].each { |f| require f }
