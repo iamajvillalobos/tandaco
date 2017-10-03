@@ -1,43 +1,41 @@
-# Tandaco
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tandaco`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+## Tandaco
+Ruby gem that wraps the [Tanda](https://tanda.co) API.
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
+Add to your Gemfile
+```
 gem 'tandaco'
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install tandaco
-
 ## Usage
+Before making any calls you must first generate a token. Instructions on how to
+get that [is
+here](https://my.tanda.co/api/v2/documentation#header-authentication-(authorization-code)).
 
-TODO: Write usage instructions here
+```ruby
+client = Tandaco.new(token: token)
 
-## Development
+# fetch all users
+client.get_all_users
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## Documentation
+### Users
+```ruby
+client = Tandaco.new(token: token)
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+# Fetch all users in your organization
+client.get_all_users
+```
 
-## Contributing
+## Thanks
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tandaco. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+**tandaco** © 2017+, Arman Jon Villalobos. Released under the [MIT] License.<br>
+Authored and maintained by Arman Jon Villalobos with help from contributors ([list][contributors]).
 
-## License
+> [armanjon.com](http://armanjon.com) &nbsp;&middot;&nbsp;
+> GitHub [@iamarmanjon](https://github.com/iamarmanjon) &nbsp;&middot;&nbsp;
+> Twitter [@iamarmanjon](https://twitter.com/iamarmanjon)
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Tandaco project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/tandaco/blob/master/CODE_OF_CONDUCT.md).
+[MIT]: http://mit-license.org/
+[contributors]: http://github.com/iamarmanjon/tandaco/contributors
